@@ -34,6 +34,12 @@ body {
     padding-left: 25px;
 }
 
+.container_perfil {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .secaoDetalhesConta {
     color: #fff;
     padding: 60px 0 30px;
@@ -59,6 +65,20 @@ body {
     font-weight: bold;
 }
 
+.secaoDetalhesConta_social {
+    display: flex;
+    align-items: center;
+}
+
+.secaoDetalhesConta_social figure img{
+    width: 100%;
+    max-width: 40px;
+}
+
+.secaoDetalhesConta_social-presente {
+    margin-right: 50px;
+}
+
 .secaoDetalhesConta_sobreSaldo {
     border-top: 2px solid #1F6F54;
     display: flex;
@@ -68,14 +88,25 @@ body {
     margin-top: 20px;
 }
 
+.secaoDetalhesConta_sobreSaldo-ver{
+    display: flex;
+    align-items: center;
+}
+
 .secaoDetalhesConta_sobreSaldo p{
     font-size: 18px;
-    line-height: 22px;
+    line-height: 25px;
 }
 
 .secaoDetalhesConta_sobreSaldo p strong {
-    display: block;
+    display: inline-block;
     font-weight: bold;
+}
+
+.secaoDetalhesConta_sobreSaldo img{
+    margin-left: 10px;
+    width: 100%;
+    max-width: 30px;
 }
 
 .secaoDetalhesConta_sobreSaldo button {
@@ -239,6 +270,12 @@ body {
   
 .secaoTransacao_cobrar .secaoTransacao_boxOpcao p {
     margin-left: 10px;
+}
+
+.secaoTransacao_cobrar .secaoTransacao_boxOpcao p strong{
+    display: block;
+    font-weight: bold;
+    padding: 5px 0;
 }
   
 .rodape {
