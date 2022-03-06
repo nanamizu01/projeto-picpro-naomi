@@ -56,22 +56,22 @@
                     </div>
 
                     <ul class="secaoDetalhesConta_opcoesTransacoes">
-                        <li class="secaoDetalhesConta_itemTransacao-qrCode">
+                        <li class="secaoDetalhesConta_itemTransacao-qrCode" id="1">
                             <img src="assets/img/qrcode.png" alt="Ícone QR Code">
                             <p>QR Code</p>
                         </li>
 
-                        <li class="secaoDetalhesConta_itemTransacao-pix">
+                        <li class="secaoDetalhesConta_itemTransacao-pix" id="2">
                             <img src="assets/img/pix.png" alt="Ícone Pix">
                             <p>Pix</p>
                         </li>
 
-                        <li class="secaoDetalhesConta_itemTransacao-boleto">
+                        <li class="secaoDetalhesConta_itemTransacao-boleto" id="3">
                             <img src="assets/img/codigo.png" alt="Ícone Pagar Boleto">
                             <p>Pagar Boleto</p>
                         </li>
 
-                        <li class="secaoDetalhesConta_itemTransacao-cobrar">
+                        <li class="secaoDetalhesConta_itemTransacao-cobrar" id="4">
                             <img src="assets/img/cobrar-icon.png" alt="Ícone Cobrar">
                             <p>Cobrar</p>
                         </li>
@@ -82,19 +82,19 @@
             <section class="secaoTransacao">
 
                 <div class="container">
-                    <div class="secaoTransacao_avisoSelecao">
+                    <div class="secaoTransacao_avisoSelecao mostrar">
                         <p>Selecione a forma de pagamento</p>
                         <img src="./assets/img/banner.png" alt="Banner do PicPay">
                     </div>
 
-                    <div class="secaoTransacao_qrCode">
+                    <div data-id="1" class="secaoTransacao_qrCode">
                         <img src="assets/img/qrcode-imagem.png" alt="Imagem QR Code">
                         <p>@naomi.komiyama</p>
                         <button>Cobre um amigo</button>
                         <a href="#">Compartilhar meu código</a>
                     </div>
 
-                    <div class="class=secaoTransacao_pix">
+                    <div data-id="2" class="class=secaoTransacao_pix">
                         <img src="assets/img/pix-logo.png" alt="Logo Pix">
 
                         <div class="secaoTransacao_boxOpcao">
@@ -108,7 +108,7 @@
                         </div>
                     </div>
 
-                    <div class="secaoTransacao_boleto">
+                    <div data-id="3" class="secaoTransacao_boleto">
                         <img src="assets/img/boleto.png" alt="Ícone Boleto">
                         <h2>Pagar com código de barras</h2>
                         <p>Você pode parcelar em até 12x no cartão ou usar seu saldo em carteira
@@ -116,7 +116,7 @@
                         <input type="text" placeholder="Insira o código de barras">
                     </div>
 
-                    <div class="secaoTransacao_cobrar">
+                    <div data-id="4" class="secaoTransacao_cobrar">
                         <img src="assets/img/cobrar.png" alt="Ícone Cobrar">
                         <h2>Cobrar</h2>
                         <p>Divida a conta com os amigos de forma fácil!</p>
@@ -165,5 +165,6 @@
             </div>
             </footer>
         </main>
+        <script src="assets/js/script.js"></script>
     </body>
 </html>
