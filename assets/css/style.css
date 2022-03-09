@@ -130,11 +130,7 @@ body {
     height: 177px;
     border-radius: 10px;
     padding: 35px 20px;
-}
-
-.secaoDetalhesConta_opcoesTransacoes li img{
-    width: 100%;
-    max-width: 40px;
+    cursor: pointer;
 }
 
 .secaoDetalhesConta_opcoesTransacoes li p{
@@ -150,6 +146,7 @@ body {
     border-radius: 20px 20px 0 0;
     border-bottom: 15px solid #f0f0f0;
     padding: 30px 0;
+    min-height: 480px;
 }
 
 .secaoTransacao .container div{
@@ -320,12 +317,28 @@ body {
     max-width: 80px;
 }
 
-.secaoDetalhesConta_itemTransacao:hover {
+.secaoDetalhesConta_itemTransacao-qrCode:hover {
+    background-color: #fff;
+    color: #228664;
+
+}
+
+.secaoDetalhesConta_itemTransacao-pix:hover {
     background-color: #fff;
     color: #228664;
 }
 
-.secaoDetalhesConta_itemTransacao figure {
+.secaoDetalhesConta_itemTransacao-boleto:hover {
+    background-color: #fff;
+    color: #228664;
+}
+
+.secaoDetalhesConta_itemTransacao-cobrar:hover {
+    background-color: #fff;
+    color: #228664;
+}
+
+.secaoDetalhesConta_opcoesTransacoes figure {
     background-repeat: no-repeat;
     background-size: cover;
     display: block;
@@ -338,23 +351,31 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     display: block;
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
 }
 
 .secaoDetalhesConta_itemTransacao-pix figure {
     background-image: url("../img/pix.png");
+    height: 40px;
+    width: 40px;
 }
 
 .secaoDetalhesConta_itemTransacao-boleto figure {
     background-image: url("../img/codigo.png");
-    width: 100%;
-    max-width: 65px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    height: 30px;
+    width: 40px;
+    
 }
 .secaoDetalhesConta_itemTransacao-cobrar figure {
     background-image: url("../img/cobrar-icon.png");
-    width: 100%;
-    max-width: 60px;
+    background-size: cover;
+    display: block;
+    height: 33px;
+    width: 40px;
 }
 
 .secaoDetalhesConta_itemTransacao-qrCode:hover figure {
@@ -372,7 +393,7 @@ body {
     background-image: url("../img/cobrar-verde.png");
 }
   
-.secaoDetalhesConta_itemTransacao figure img {
+.secaoDetalhesConta_opcoesTransacoes figure img {
     width: 100%;
     max-width: 25px;
     height: 20px;
